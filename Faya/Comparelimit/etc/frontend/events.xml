@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Santhosh
+ * @package Faya_Comparelimit
+ */ 
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch_catalog_product_compare_add">
+        <observer name="Faya_Comparelimit_Product_Limit" instance="Faya\Comparelimit\Observer\productLimit" />
+    </event>
+</config>
