@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Santhosh
+ * @package Faya_Homestyle
+ */ 
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+   <head>
+   		<css src="Faya_Homestyle::css/homestyle.css" />
+    </head>
+   <referenceContainer name="content">
+        <container name="block.container" htmlTag="div" htmlId="banner.container" htmlClass="block-homebanner-container" before="">
+            <block class="Magento\Framework\View\Element\Template" name="block.banner" as="block.home.banner" template="Faya_Homestyle::homestyle/banner.phtml" after="-" />
+        </container>
+    </referenceContainer>
+</page>
